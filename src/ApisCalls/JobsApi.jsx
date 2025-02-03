@@ -16,6 +16,7 @@ function JobsApi() {
             "x-rapidapi-host": host,
           },
         };
+
         
         const response = await fetch(url, options);
         const data = await response.json();
