@@ -6,6 +6,7 @@ function JobsApi() {
   const host = import.meta.env.VITE_JOBS_HOST;
   const apiKey = import.meta.env.VITE_RAPID_API_KEY;
   
+
   
   useEffect(() => {
     const fetchData = async () => {
