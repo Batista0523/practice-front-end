@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 function JobsApi() {
   const [jobs, setJobs] = useState([]);
   const url = import.meta.env.VITE_JOBS_URL;
   const host = import.meta.env.VITE_JOBS_HOST;
   const apiKey = import.meta.env.VITE_RAPID_API_KEY;
   
-
-
-
-  
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -37,6 +32,7 @@ function JobsApi() {
   }, []);
   return (
     <div>
+        <Link to='/'>Home</Link>
       {jobs.map((job, index) => (
         <div key={index}>
           <h4>Company {job.company}</h4>

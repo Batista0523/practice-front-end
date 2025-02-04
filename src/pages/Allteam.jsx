@@ -10,6 +10,7 @@ function Allteam({ teamData }) {
   
   return (
     <div>
+      <Link to='/'>Home</Link>
       {teamData.map((team, index) => (
         <div
           style={{
